@@ -8,7 +8,7 @@ import * as store from './store.js';
 webRTCHandler.getLocalPreview().then(()=>{
   let call_animation = document.getElementById("animation_container");
   call_animation.addEventListener('click', ()=> {
-  const socket = io("/");
+  const socket = io("https://english-talk.herokuapp.com/");
   wss.registerSocketEvents(socket);
   let loader = document.getElementById('loader');
   loader.classList.remove('display_none');
