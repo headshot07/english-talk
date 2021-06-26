@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel='stylesheet' href='./css/style.css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <title>
+            English Talk
+        </title>
+    </head>
+    <body>
+        <script src="./js/call.js" type="module"></script>
+        <script src='/socket.io/socket.io.js'></script>
+        <div class="">
+            <div class="d-flex justify-content-center">
+                <div class="video_container">
+                    <video class='remote_video '  autoplay id="remote_video"></video>
+                    <div class='local_video_container display_none'>
+                        <video class='local_video' muted  autoplay id="local_video"></video>
+                    </div>
+                    <div class="loader display_none" id='loader'>
+
+                    </div>
+                    <div class="animation_container" id="animation_container">
+                        <div class='call_animation' id="call_animation">
+                            <img class="navbar_image img-responsive" src="./images/phone-call-icon.png" alt="Logo">
+                        </div>
+                    </div>
+                    <p id="timer" class="timer"></p>
+                    <div class='call_buttons_container display_none' id='call_buttons'>
+                        <button class='call_button_small' id='mic_button'>
+                            <img src='./utils/images/mic.png' id='mic_button_image'></img>
+                        </button>
+                        <button class='call_button_large' id='hang_up_button'>
+                            <img src='./utils/images/hangUp.png'></img>
+                        </button>
+                        <button class='call_button_small' id='camera_button'>
+                            <img class='camera' src='./utils/images/cameraOff.png' id='camera_button_image'></img>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

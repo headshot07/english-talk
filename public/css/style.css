@@ -1,0 +1,263 @@
+/* Navbar */
+.navbar_custom{
+    background-color: #7728E1;
+    height: 15vh;
+}
+.navbar_image{
+    height: 50px;
+}
+
+.container_style{
+    height: 75vh;
+}
+
+/* Videos */
+.video_container{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: white;
+}
+.remote_video{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+.local_video_container {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    background: #7728E1;
+    top: 15px;
+    left: 15px;
+    object-fit: fill;
+  }
+.local_video {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 15px;
+}
+
+/* Buttons */
+.call_buttons_container {
+    position: absolute;
+    width: 100%;
+    height: 75px;
+    bottom: 5px;
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    background-color: transparent;
+    overflow: hidden;
+ }
+.call_button_small {
+    width: 60px;
+    height: 60px;
+    background: #7728E1;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+  
+.call_button_large {
+    border-radius: 75px;
+    width: 60px;
+    height: 60px;
+    background: red;
+    transition: 0.3s;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+/* .hangUp{
+    width: 70px;
+    height: 70px;
+    background: red;
+} */
+/* .mic{
+    width: 60px;
+    height: 60px;
+    background: #7728E1;
+} */
+/* .camera{
+    width: 60px;
+    height: 60px;
+} */
+button {
+    border: none !important;; 
+    outline: none !important;;
+}
+  
+button:hover {
+    opacity: 0.7;
+}
+  
+.column_style{
+    height: 70vh;
+    align-items: flex-end;
+}
+
+/* Animation */
+.animation_container{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: 40%;
+    left: calc(46.5%);
+    /* display: flex;
+    height: 30vh;
+    display: flex; */
+    justify-content: center;
+    /* align-items:flex-end; */
+    background-color: white;
+}
+.call_animation{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.call_animation:before{
+    content:"";
+    position: absolute;
+    width: calc(100% + 40px);
+    height:  calc(100% + 40px);
+    border-radius: 50%;
+    border:10px solid #7728E1;
+    animation:animate 1.5s linear infinite;
+    
+}
+.call_animation:after{
+    content:"";
+    position: absolute;
+    width: calc(100% + 40px);
+    height:  calc(100% + 40px);
+    border-radius: 50%;
+    border:20px solid #7728E1;
+    animation:animate 1.5s linear infinite;
+    animation-delay: 0.4s;
+    
+}
+@keyframes animate{
+    0%{
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.4);
+        opacity: 0;
+    }
+}
+/* .callbutton{
+    position: absolute;
+    width: 100px;
+    height: 75px;
+    bottom: 50%;
+    left: calc(35%);
+    display: flex;
+    background-color: transparent;
+    border: 12px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 12px solid #7728E1;
+} */
+
+.next_button{
+    height: 100px;
+    width: 100px;
+}
+/* Loader */
+.loader {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    bottom: 45%;
+    left: calc(46.5%);
+    display: flex;
+    background-color: transparent;
+    border: 12px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 12px solid #7728E1;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.timer{
+    position: absolute;
+    font-weight: bolder;
+    width: 75px;
+    font-size: larger;
+    font-weight: bolder;
+    color: white;
+    bottom: 100px;
+    left: calc(47.5%);
+    display: flex;
+}
+
+.display_none {
+    display: none;
+}
+  
+/* Media Screen */
+@media screen and (max-width: 480px) {
+    .navbar_image {
+        height: 40px;
+    }
+    .heading_one{
+        font-size: 40px;
+    }
+    .animation_container{
+        left: calc(38%);
+    }
+    .loader{
+        left: calc(38%);
+    }
+    .timer{
+        left: 42%;
+    }
+    .video_container{
+        height: 91vh;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
