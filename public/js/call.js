@@ -8,7 +8,7 @@ import * as store from './store.js';
 webRTCHandler.getLocalPreview().then(()=>{
   let call_animation = document.getElementById("animation_container");
   call_animation.addEventListener('click', ()=> {
-  const socket = io("https://192.168.0.106:3000");
+  const socket = io("/");
   wss.registerSocketEvents(socket);
   let loader = document.getElementById('loader');
   loader.classList.remove('display_none');
